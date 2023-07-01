@@ -1,0 +1,120 @@
+:root {
+  --primary-color: hsl(224, 23%, 55%);
+  --secondary-color: hsl(225, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(./images/pattern-background-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var( --secondary-color);
+  width: 21.875rem;
+  height: 34.375rem;
+  border-radius: 0.9375rem;
+}
+
+.card_image {
+  width: 100%;
+  border-top-left-radius: 0.9375rem;
+  border-top-right-radius: 0.9375rem;
+}
+
+.card_information_container {
+  padding: 1.875rem;
+  text-align: center;
+}
+
+.card_information_container_heading {
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+
+.card_information_container_description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary-color);
+  margin-top: 1.125rem;
+  margin-left: 0.875rem;
+  margin-right: 0.875rem;
+}
+
+.card_information_container_plan {
+  margin-top: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(225, 100%, 94%, 0.4);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.card_information_container_plan_container {
+  display: flex;
+  align-items: center;
+}
+
+.card_information_container_plan_container_info {
+  margin-left: 20px;
+}
+
+.card_information_container_plan_container_info_plan_name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.card_information_container_plan_container_info_plan_price {
+  margin-top: 5px;
+  color: var(--primary-color);
+}
+
+.card_information_container_link {
+  font-size: 15px;
+}
+
+.card_information_container_payment_button {
+  margin-top: 1.125rem;
+  border-radius: 10px;
+  color: var(--secondary-color);
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-weight: 700;
+  box-shadow: 0px 8px 15px rgba(224, 232, 255, 0.75);
+  -webkit-box-shadow: 0px 8px 15px rgba(224, 232, 255, 0.75);
+  -moz-box-shadow: 0px 8px 15px rgba(224, 232, 255, 0.75);
+}
+
+.card_information_container_payment_button:hover {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.card_information_container_cancel_button {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card_information_container_cancel_button:hover {
+  color: hsl(223, 47%, 23%);
+}
